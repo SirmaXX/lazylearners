@@ -1,0 +1,311 @@
+<html>
+<head>
+    </head>
+<body>
+    
+    <input id="bagis" type="text">
+<button type="button" onclick="bas()">Bağış</button>
+<p id="kontrol"></p>
+
+     <!--
+ 
+    36.<h1>dene </h1>
+     <button onclick="bas()">Bas</button>
+    <br>
+       <p id="kontrol">EWASD</p>
+   
+    25. <button type="button"
+          onclick="sirala()">DENEME</button>
+    
+   -->
+    <script>
+    /* 1.alert("hello world"); 
+         
+         2.var deneme = prompt("deneme");
+        
+        
+   
+       7.document.getElementById("yazi").innerHTML = 5 + 6; 
+       
+       8. document.write(5 + 6);
+       
+       9.
+      
+        VARİABLES + 
+       10. var x=10.4
+        var y =11.5
+        var z= x+y ;
+        alert(z);
+     
+        
+      9. var x, y ,z ,l;
+        x=1;y=2;z=3;
+        l= x + y + z;
+        alert(l);
+        
+      
+        
+        //10. tekli torum satırı 
+        
+        /* 11 .  çoklu yorum */
+        
+        /*
+        
+         12.  function bas(){
+            document.getElementById('yazi').innerHTML='yazı değişir'; 
+               }
+        
+        
+     // farklı  fonksiyon örneği
+   13. function topla(p1,p2){
+        
+        return p1 * p2;
+
+
+    }
+          document.getElementById("yazi").innerHTML = topla(3,4);
+        
+   //  NESNE ÖRNEĞİ 1 
+       14 .var car="şahin";
+         document.getElementById("yazi").innerHTML = car;
+
+   
+       //   NESNE ÖRNEĞİ 2 
+       15. var objectt ={
+            
+            height:"11",
+            width:"22",
+            colorr:"blackk"
+     
+        }
+        
+         document.getElementById("yazi").innerHTML = objectt.height + " height " + objectt.width + " widht " + objectt.colorr + " object color " ;
+        
+        
+        
+       //  STRİNG METHODS YAZI METHODLARI
+      
+       16. var txt = "examplewordsishere";
+var sln = txt.length;
+        alert(sln);
+        
+        
+      //   find location words YAZININ KAÇINCI SATIRDA
+        
+        var txt = "example words is here";
+        var find= txt.indexOf("example");
+        document.getElementById("yazi").innerHTML=find;
+             
+        
+             // Tostring method  sayısal değeri metne çevimek.
+         17.var k=12345;
+      document.getElementById("yazi").innerHTML= k.toString();
+      
+      
+      
+      // MATH METHODS matematik methodları
+      
+      
+     18. sayıyı aşapı yuvarlar yuvarlamak
+    document.getElementById("yazi").innerHTML =Math.round(4.21);
+    
+    
+    19.Math.sqrt(49) .etc, karesini almak
+    Math.pow(7,2) 
+    Math.PI pi sayısı
+      
+      
+      20.math random trick .Doğal sayı şeklinde değer atar :)
+      document.getElementById("yazi").innerHTML =Math.floor(Math.random()*11);
+     
+      
+   22.var tarih = new Date()
+    document.getElementById("yazi").innerHTML= tarih;
+  
+        
+           arraysdaki itemleri yazdırmak
+       24  .var araba =["mercedes","ford","lord" ]
+    document.getElementById("yazi").innerHTML= araba;
+    
+    
+   //  25 .arraysdaki itemleri albafeye göre sıralamak .sorting list item
+    var araba =["zercedes","ford","lord" ]
+    document.getElementById("yazi").innerHTML= araba;
+
+        
+          function sirala() {
+              araba.sort();
+                  document.getElementById("yazi").innerHTML=araba;
+              
+          }
+          
+      //   26.  booleans ifade
+           10 < 9; false
+           10 > 9 ; true
+           
+    
+     
+    //   27.  switch case şart ifade örneği 
+      var sayitut =prompt("sayı tut");
+       var  i = parseInt(sayitut);
+        switch(i){
+                
+                case 0:
+               
+                alert("doğru");
+                break;
+                
+                case 1 :
+               
+                alert("yaklaştın");
+                break;
+                
+            default:
+                alert("bulamadın");
+       
+                      }
+                     
+     //   28.     koşul ifadeleri if-else örnek         
+        var yas =18;
+        
+        if(yas<18){ 
+            alert("giremezsin odaya");
+        }
+        else if(yas==18){
+            
+            alert("bugünlük bizden olsun");
+            
+        }
+        else if (yas>18){
+            
+            
+            alert("hoşgeldiniz");
+        }
+        
+        
+        
+        
+        
+  //    30.   while ve for döngüleri 
+  not:while döngüsünde bir koşu sağlandığı sürece döngü devam eder.
+        
+        for döngüsünde işi ne kadar yapacağınla ilgilidir 
+        
+       31. var liste ="";
+        var fruit = ['armut','elma','kayısı']
+        for( i=0;i<fruit.length;i++)  
+            {
+                
+            liste +=fruit[i] + "<br>"    
+                
+            }
+        document.getElementById("yazi").innerHTML=liste;
+        
+        
+       //  32.while
+        var sira ="";
+        var sirala=prompt("kaç adet dosyayı sıralayalım ?");
+        var k = 0;
+         var sira ="";
+        
+        while(k < sirala){
+            
+            sıra     +="<br>dosya sırası" +k;
+            k++;
+   
+        }
+        
+        document.getElementById("yazi").innerHTML=sira;
+        
+       //  33.do while 1 işlemi tekrar eder sonra koşulu sorgular    
+        var müsteri =20;
+        var siradaki=1;
+        var sira=""
+        do{
+            sira += "<br>sıradaki müşteri no" +siradaki;
+            siradaki ++;
+            
+        }while(siradaki < müsteri);
+        document.getElementById("yazi").innerHTML=sira;
+     
+      //  34. TYPEOF
+        
+        'words' string
+        'null ' object
+        'false' boolean
+        '25 ' number
+        
+    
+       // 35. bitwise bit üzerinde işlem örneği 
+        
+        var sBinString = '1011';
+var nMyNumber = parseInt(sBinString, 2);
+alert(nMyNumber); // prints 11, i.e. 1011
+ 
+      // 36.Regex  girilen metin değerini(inputu) kontrol etmeye yarar
+ 
+        function bas(){
+            
+     kelime = document.getElementById("yazi").innerHTML;
+        document.getElementById("kontrol").innerHTML= /d/.test(kelime);
+        }
+        
+ // 37.try cache hata ayıklama/yakalama    
+function bas() {
+    var message, x;
+    message = document.getElementById("kontrol");
+    message.innerHTML = "";
+    x = document.getElementById("bagis").value;
+    try { 
+        if(x == "") { alert("lütfen bağış yapın");}
+        if(isNaN(x)){ alert("lütfen rakam girniz");} 
+        x = Number(x);
+        if(x < 1)  {alert("lütfen 1'den büyük değeler giriniz");} 
+        if(x > 500)   {alert("büyük bağışlar için lütfen mail atınız");} 
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
+
+
+// 36. console kullanımı
+console.log("code not found");
+
+
+// 37."use strict";
+
+kodunuzun başına eklendiği taktirde hataları consolda gösterir
+
+
+             */
+        
+             
+    </script>
+
+      
+    <!-- 
+  3.<button type="button"
+          onclick="document.getElementById('demo').innerHTML = Date()">DENEME</button>
+    <p id="demo"></p>
+  
+    
+    
+   4. <button onclick="document.getElementById('yazi').innerHTML = 'yazı'">sadasdasda</button>
+    <p id="yazi">sadasdasdsa</p>
+  
+    
+  5.  <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+  
+    
+   13.<button onclick="bas()">dene</button>
+ 
+      -->
+   
+    </body>
+
+</html>
