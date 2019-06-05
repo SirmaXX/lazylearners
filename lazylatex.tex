@@ -1,0 +1,83 @@
+%döküman tipi belirtir letter .etc değişebilir
+\documentclass[10pt]{article}
+
+
+\usepackage[utf8]{inputenc} %Türkçe karakterler
+\usepackage{amsmath} %matematik kütüphanesi
+\usepackage{graphicx} %grafik kütüphanesi
+
+
+% yazar hakkında bilgiler
+\title{My first document}
+\date{2013-09-01}
+\author{John Doe}
+% yazar hakkında bilgiler
+
+
+% içerik hakkında bilgiler
+\begin{document}
+% sayfa numalandırma
+  \pagenumbering{gobble}
+  \maketitle
+  
+    Hello World!
+ % eşitlik  
+\begin{equation*}
+ f(x)=x^2
+\end{equation*}
+
+
+  \newpage
+  \pagenumbering{arabic}
+  % içindekiler
+\tableofcontents
+\newpage
+
+
+\section{Section}
+
+Hello World!
+
+\subsection{Subsection}
+
+Structuring a document is easy!
+
+\subsubsection{Subsubsection}
+
+More text.
+
+\paragraph{Paragraph}
+
+Some more text.
+
+\subparagraph{Subparagraph}
+
+Even more text.
+
+\section{Another section}
+
+   \newpage
+  \pagenumbering{arabic}
+ 
+\begin{align*}
+  f(x) &= x^2\\
+  g(x) &= \frac{1}{x}\\
+  F(x) &= \int^a_b \frac{1}{3}x^3
+\end{align*}
+
+$\left[
+\begin{matrix}
+1 & 0\\
+0 & 1
+\end{matrix}
+\right]$
+
+   \newpage
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.75]{boat.png}
+\caption{A simple caption \label{overflow}}
+\end{figure}
+
+
+\end{document}
