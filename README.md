@@ -12,3 +12,5 @@
 * latex
 * python
 
+## Alternative Project for lazy people(ı found from the internet)
+#https://learnxinyminutes.com/
