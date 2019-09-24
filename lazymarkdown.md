@@ -98,6 +98,14 @@ This checkbox below will be a checked HTML checkbox.
 - [x] This task has been completed
 
 
+How to İncludes code in markdown
+```html
+
+```  
+```python
+
+
+```
 
 Resources 
 ----------
