@@ -99,6 +99,9 @@ This checkbox below will be a checked HTML checkbox.
 
 
 How to İncludes code in markdown
+
+``` html 
+  ```  
 ```html
 
 ```  
