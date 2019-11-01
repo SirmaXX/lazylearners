@@ -2,7 +2,7 @@
 
 
 
-#Lazy learner paper's
+# Lazy learner paper's
 
 ## lazy programming papers list
 * Php
@@ -14,4 +14,5 @@
 * markdown 
 
 ## Alternative Project for lazy people(ı found from the internet)
-#https://learnxinyminutes.com/
+* https://learnxinyminutes.com/
+* https://www.youtube.com/user/derekbanas
